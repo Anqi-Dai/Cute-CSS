@@ -1,0 +1,126 @@
+#background {
+  width:400px;
+  height: 250px;
+  background-color:#C3F2F6;
+  z-index: 0;
+  animation-name:skycolor;
+  animation-duration:5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes skycolor {
+  0% {
+    background-color: #667BCA;
+  }
+  100% {
+    background-color:#C3F2F6;
+  }
+};
+
+#sun {
+  width:70px;
+  height: 70px;
+	border-radius: 50%;
+  background-color: #FF8582;
+  z-index: 2;
+  position: fixed;
+  top:30px;
+  left:30px;
+  -webkit-box-shadow: 1px 1px 21px 12px #FFF28C;
+  box-shadow: 1px 1px 21px 12px #FFF28C;
+  animation-name: sunrise;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes sunrise {
+  0% {
+    top:190px;
+  }
+
+  100% {
+    top:30px;
+    -webkit-box-shadow: 1px 1px 21px 12px #FFF28C;
+    box-shadow: 1px 1px 21px 12px #FFF28C;
+  }
+
+}
+
+#mountain1 {
+  height: 0;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #8BD777;
+  border-top: 100px solid transparent;
+  position: absolute;
+  top: 58px;
+  left: 80px;
+  z-index: 1;
+}
+
+
+#mountain2 {
+  height: 0;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #8BD777;
+  border-top: 100px solid transparent;
+  position: absolute;
+  top: 58px;
+  left:200px;
+  z-index: 2;
+}
+
+#cloud1 {
+  width: 40px;
+  height: 20px;
+  transform: scale(2);
+  background-color: #fff;
+  border-radius: 40%;
+  position: fixed;
+  left:200px;
+  top: 60px;
+  animation-name: cloudmove1;
+  animation-duration: 5.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes cloudmove1 {
+  0% {
+    left:140px;
+  }
+  50% {
+    left:160px;
+  }
+  100% {
+    left:140px;
+  }
+}
+
+#cloud2 {
+  width: 40px;
+  height: 20px;
+  transform: scale(2);
+  background-color: #fff;
+  border-radius: 40%;
+  position: absolute;
+  left:330px;
+  top: 60px;
+  animation-name: cloudmove2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes cloudmove2 {
+  0% {
+    left:300px;
+  }
+  50% {
+    left:260px;
+  }
+  100% {
+    left:320px;
+  }
+}
